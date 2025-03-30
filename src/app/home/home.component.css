@@ -1,0 +1,45 @@
+.hero-image{
+    background: url(../../../public/LostPaws\ Background\ Image.png) center/cover no-repeat; 
+    height: 500px;
+}
+
+.overlapping-images {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.overlapping-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.overlapping-images .img-1 {
+    position: absolute;
+    top: -100px;
+    left: 150px;
+    z-index: 1;
+}
+.overlapping-images .img-2 {
+    position: absolute;
+    top: 50px;
+    left: 00px;
+    z-index: 2;
+}
+
+.helpHeader {
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.helpRow {
+    position: relative;
+    top: -80px;
+}
+
+
+.imageHero {
+    width: 350px;
+    height: 350px; 
+    object-fit: cover;
+}

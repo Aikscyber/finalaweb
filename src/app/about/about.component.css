@@ -1,0 +1,58 @@
+body {
+    background-color: #F3C7E1;
+}
+.text-purple {
+    color: #CDB7F0;
+}
+.hero img, .section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.imgColumn {
+    width: 100%;
+    max-height: 750px;
+    object-fit: cover;
+    position: relative;
+   
+}
+
+.lColumn {
+    background-color: aquamarine;
+    position: relative;
+    right: -120px;
+    z-index: 2;
+}
+
+.gradient-bg {
+    background: linear-gradient(to bottom, white 50%, #343a40 50%);
+    color: white;
+}
+
+.gradient-bg h2,
+.gradient-bg p {
+    color: black; /* Keeps text visible in the white area */
+}
+
+.advocacy-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 5px solid #343a40;
+}
+
+@media (max-width: 768px) {
+    .gradient-bg {
+        background: linear-gradient(to bottom, white 40%, #343a40 60%);
+        
+    }
+    .advocacy-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+
+
