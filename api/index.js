@@ -94,7 +94,7 @@ app.delete("/adoptions/DeleteAdoption", async (req, res) => {
     if (!fullName) return res.status(400).json({ error: "Full Name is required" });
 
     let result = await database.collection("adoptions").deleteMany({
-      fullName: { $regex: new RegExp(`^${fullName}$`, "i") } // ✅ Case-insensitive match
+      fullName: { $regex: new RegExp(`^${fullName}$`, "i") } // Case-insensitive match
     });
 
     if (result.deletedCount === 0) {
@@ -108,9 +108,8 @@ app.delete("/adoptions/DeleteAdoption", async (req, res) => {
   }
 });
 
-
-
-// Start server
-app.listen(5038, () => {
-  console.log("🚀 API Server running on http://localhost:5038");
+// Start server with dynamic port and binding to 0.0.0.0 (for external access)
+const PORT = process.env.PORT || 5038;  // Use dynamic port if available
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`🚀 API Server running on http://localhost:${PORT}`);
 });
