@@ -40,3 +40,7 @@ nav ul {
 * {
   font-family: "Pusia";
 }
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

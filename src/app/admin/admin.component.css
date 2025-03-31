@@ -1,0 +1,43 @@
+.container {
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px); 
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-content {
+    text-align: center;
+  }
+  
+  .admin-action-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: violet;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .admin-action-btn:hover {
+    background-color: #7a4bc5;
+  }
+  
